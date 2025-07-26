@@ -26,9 +26,10 @@
   }
 }
 
-body {
+html,body {
   @apply bg-primary text-textMain font-sans;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
+  overflow-x : hidden;
 }
 
