@@ -32,10 +32,10 @@ export default function AboutSection() {
             Tentang <span className="text-emerald-500">Villa Na Key</span>
           </h2>
           <p className="mb-4 text-lg text-gray-600">
-            Villa Na Key adalah tempat terbaik buat kamu yang pengin kabur sejenak dari hiruk-pikuk kota. Di tengah suasana tropis yang damai dan jauh dari keramaian, villa ini siap jadi tempat kamu beristirahat dan menikmati ketenangan alam
+            Villa Na Key adalah tempat terbaik buat kamu yang ingin kabur sejenak dari hiruk-pikuk kota. Di tengah suasana tropis yang damai dan jauh dari keramaian, villa ini siap jadi tempat kamu beristirahat dan menikmati ketenangan alam
           </p>
           <p className="text-gray-500 text-md">
-            Villa Na Key punya semua yang kamu butuhin buat liburan seru — mulai dari kolam renang pribadi, dapur lengkap, sampai pemandangan alam yang bikin betah. Cocok banget buat liburan bareng keluarga, pasangan, atau bahkan solo trip santai.
+            Villa Na Key punya semua yang kamu butuhin buat liburan seru — mulai dari kolam renang pribadi, peralatan dapur yang lengkap, sampai pemandangan alam yang bikin betah.sangat cocok untuk liburan dengan keluarga, pasangan, atau bahkan solo trip santai.
           </p>
         </motion.div>
 
