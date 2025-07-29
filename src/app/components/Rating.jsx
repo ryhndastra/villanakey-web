@@ -52,7 +52,7 @@ export default function ReviewSection() {
                 transition={{ duration: 0.6 }}
                 className="mb-4 text-4xl font-bold text-center text-black"
               >
-                Ulasan <span className='text-emerald-600'>Pengunjung</span>
+                Ulasan <span className='text-emerald-500'>Pengunjung</span>
               </motion.h2>
 
               <motion.p

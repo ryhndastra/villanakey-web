@@ -3,12 +3,12 @@
 import { motion } from 'framer-motion'
 
 const galleryImages = [
-  '/images/villa1.jpg',
-  '/images/villa2.jpg',
-  '/images/villa3.jpg',
-  '/images/villa6.jpg',
-  '/images/villa5.jpg',
   '/images/villa7.jpg',
+  '/images/villa1.jpg',
+  '/images/villa3.jpg',
+  '/images/test1.jpg',
+  '/images/test.jpg',
+  '/images/villa2.jpg',
 ]
 
 export default function GallerySection() {
@@ -23,7 +23,7 @@ export default function GallerySection() {
           transition={{ duration: 0.6 }}
           className="mb-12 text-center"
         >
-          <h2 className="text-4xl font-bold text-black">Galeri <span className='text-emerald-600'>Villa</span></h2>
+          <h2 className="text-4xl font-bold text-black">Galeri <span className='text-emerald-500'>Villa</span></h2>
           <p className="mt-2 text-gray-500">Keindahan dan kenyamanan dalam setiap sudut villa kami</p>
         </motion.div>
 
