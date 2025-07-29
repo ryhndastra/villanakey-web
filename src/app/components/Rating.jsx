@@ -35,8 +35,8 @@ export default function ReviewSection() {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false })
 
   return (
-    <section id="reviews" ref={ref} className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-4">
+    <section id="reviews" ref={ref} className="py-20 bg-white">
+      <div className="max-w-6xl px-4 mx-auto">
         <AnimatePresence>
           {inView && (
             <motion.div
@@ -50,9 +50,9 @@ export default function ReviewSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="text-4xl font-bold text-center text-emerald-600 mb-4"
+                className="mb-4 text-4xl font-bold text-center text-black"
               >
-                Ulasan Pengunjung
+                Ulasan <span className='text-emerald-600'>Pengunjung</span>
               </motion.h2>
 
               <motion.p
@@ -60,12 +60,12 @@ export default function ReviewSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1, duration: 0.6 }}
-                className="text-center text-gray-600 mb-12"
+                className="mb-12 text-center text-gray-600"
               >
                 Apa kata tamu setelah menginap di Villa Na Key?
               </motion.p>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
                 {reviews.map((rev, idx) => (
                   <motion.div
                     key={idx}
@@ -73,18 +73,18 @@ export default function ReviewSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false }}
                     transition={{ delay: idx * 0.2 }}
-                    className="bg-white p-6 rounded-3xl shadow-md border border-gray-100 hover:shadow-xl transition-all"
+                    className="p-6 transition-all bg-white border border-gray-100 shadow-md rounded-3xl hover:shadow-xl"
                   >
                     <div className="flex items-center mb-4">
                       <img
                         src={rev.avatar}
                         alt={rev.name}
-                        className="w-14 h-14 rounded-full object-cover border border-emerald-200"
+                        className="object-cover border rounded-full w-14 h-14 border-emerald-200"
                       />
                       <div className="ml-4">
                         <p className="font-semibold text-gray-800">{rev.name}</p>
                         <p className="text-xs text-gray-500">{rev.subtitle}</p>
-                        <div className="flex text-yellow-400 mt-1">
+                        <div className="flex mt-1 text-yellow-400">
                           {Array.from({ length: 5 }, (_, i) => (
                             <FaStar key={i} className={i < rev.rating ? '' : 'opacity-30'} />
                           ))}
@@ -92,10 +92,10 @@ export default function ReviewSection() {
                       </div>
                     </div>
 
-                    <p className="text-gray-700 italic mb-4">"{rev.comment}"</p>
+                    <p className="mb-4 italic text-gray-700">"{rev.comment}"</p>
 
-                    <div className="bg-emerald-50 text-sm p-3 rounded-lg border-l-4 border-emerald-400">
-                      <p className="text-emerald-700 font-semibold mb-1">Respon Pemilik:</p>
+                    <div className="p-3 text-sm border-l-4 rounded-lg bg-emerald-50 border-emerald-400">
+                      <p className="mb-1 font-semibold text-emerald-700">Respon Pemilik:</p>
                       <p className="text-gray-600">{rev.response}</p>
                     </div>
                   </motion.div>
